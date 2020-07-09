@@ -1,6 +1,7 @@
 {
-  "name": "root",
+  "name": "@internetarchive/ia-icons",
   "private": true,
+  "license": "AGPL-3.0-only",
   "devDependencies": {
     "lerna": "^3.22.1"
   }
