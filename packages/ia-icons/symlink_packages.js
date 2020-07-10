@@ -8,7 +8,7 @@ const icon_packages = fs.readdirSync(path.join(__dirname, '..'), { withFileTypes
 const icons_count = icon_packages.length;
 
 const lerna_add = ({ name }) => {
-  const child_process = spawn('lerna', [`add @internetarchive/${name} --scope=@internetarchive/ia-icons`]);
+  const child_process = spawn('lerna', [`add @internetarchive\/${name} --scope=@internetarchive\/ia-icons`]);
   child_process.on('close', () => {
     if (icon_packages.length) {
       return lerna_add(icon_packages.pop());
