@@ -13,6 +13,7 @@ install:
 
 script:
   - lerna bootstrap
+  - cd packages/ia-icons && npm dedupe
   - lerna run test
 
 after_success:
