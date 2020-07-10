@@ -14,7 +14,6 @@ install:
 
 script:
   - cd packages/ia-icons
-  - node symlink_packages.js
   - npm i
   - npm run test
 
