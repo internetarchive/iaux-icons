@@ -9,7 +9,7 @@
     "access": "public"
   },
   "scripts": {
-    "start": "es-dev-server --app-index ./index.html --node-resolve --watch --open",
+    "start": "es-dev-server --app-index ./index.html --node-resolve --watch --open --preserve-symlinks",
     "lint:eslint": "eslint --ext .js . --ignore-path .gitignore",
     "format:eslint": "eslint --ext .js . --fix --ignore-path .gitignore",
     "lint:prettier": "prettier \"**/*.js\" --check --ignore-path .gitignore",
@@ -25,6 +25,20 @@
     "test:bs": "karma start karma.bs.config.js --compatibility all --coverage"
   },
   "dependencies": {
+    "@internetarchive/icon-advance": "^0.1.0",
+    "@internetarchive/icon-audio": "^0.1.0",
+    "@internetarchive/icon-close": "^0.1.0",
+    "@internetarchive/icon-donate": "^0.1.0",
+    "@internetarchive/icon-ellipses": "^0.1.0",
+    "@internetarchive/icon-ia-logo": "^0.1.0",
+    "@internetarchive/icon-images": "^0.1.0",
+    "@internetarchive/icon-search": "^0.1.0",
+    "@internetarchive/icon-software": "^0.1.0",
+    "@internetarchive/icon-texts": "^0.1.0",
+    "@internetarchive/icon-upload": "^0.1.0",
+    "@internetarchive/icon-user": "^0.1.0",
+    "@internetarchive/icon-video": "^0.1.0",
+    "@internetarchive/icon-web": "^0.1.0",
     "lit-element": "^2.2.1"
   },
   "devDependencies": {
