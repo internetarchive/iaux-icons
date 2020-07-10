@@ -12,9 +12,9 @@ install:
   - npm install -g codecov
 
 script:
-  - lerna bootstrap
-  - cd packages/ia-icons && npm dedupe
-  - lerna run test
+  - cd packages/ia-icons
+  - npm i
+  - npm run test
 
 after_success:
   - codecov
