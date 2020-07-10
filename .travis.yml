@@ -10,10 +10,12 @@ notifications:
 install:
   - npm install
   - npm install -g codecov
+  - npm install -g lerna
 
 script:
   - cd packages/ia-icons
   - npm i
+  - node symlink_packages.js
   - npm run test
 
 after_success:
