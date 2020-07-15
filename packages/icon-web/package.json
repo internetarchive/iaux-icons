@@ -1,6 +1,6 @@
 {
   "name": "@internetarchive/icon-web",
-  "version": "0.0.1-alpha.13+91b69ae",
+  "version": "0.2.0",
   "description": "SVG web icon",
   "license": "AGPL-3.0-only",
   "main": "index.js",
@@ -12,7 +12,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "lit-element": "^2.2.1"
+    "lit-html": "^1.2.1"
   },
   "devDependencies": {
     "@open-wc/eslint-config": "^1.0.0",
