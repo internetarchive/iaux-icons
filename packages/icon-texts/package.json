@@ -1,6 +1,6 @@
 {
   "name": "@internetarchive/icon-texts",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "SVG texts icon",
   "license": "AGPL-3.0-only",
   "main": "index.js",
