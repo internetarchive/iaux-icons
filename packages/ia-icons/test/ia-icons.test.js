@@ -1,6 +1,6 @@
 import { fixture, expect, html } from '@open-wc/testing';
 
-import '../index';
+import '../ia-icon';
 
 describe('<ia-icon>', () => {
   it('renders an empty element when icon type is unrecognized', async () => {

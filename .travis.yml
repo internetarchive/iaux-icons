@@ -15,6 +15,7 @@ install:
 script:
   - cd packages/ia-icons
   - npm i
+  - npm dedupe
   - npm run test
 
 after_success:
