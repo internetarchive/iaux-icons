@@ -1,0 +1,22 @@
+language: node_js
+
+node_js:
+  - node
+
+notifications:
+  slack:
+    secure: f7KoHvPJh+TTxXlmXyH9QrycVZt2wENonY1Zs65fOCX4WBui3Y8ynU4FzsJIZ/NkmPORuCzZe1AF8yzXXs6pB7/gZS2G9A8Vwb9dUn4PkLVjqfIXu44FozKrfwVhDia2P1RQxrhKbiriL7zGYqoj7GnigtC4Xl1JRhTrmQuMjNcS9Z0ngadf+iNRF+GKpvxvHBLOCVNunyZxtkdrLW/oFWLUDm38PpI1i3NT0kDxFMdtVMI/C2GZwzoA639imF762LDe9nLhQzd8kBAddDOXYl+nKRrrZLNVQWyL0Gy5gvkIV0Ke59rltbbxKAENw0pw9O0w+OiLTS/aauihDCbmspRy1NYqA2JTcu0aMfazctQ22x37PogrAonNUOU0nv4pjTNoW84JXCGHyXRDnusbvtGLChRXSm/56JH0yf17GmUTcIIFTKKg8Gk4o7cz0ugX9wCnfLcvZ2r4SHxvnfwiRh5a8nbD65/Mg3EmUPyTmOIH/RU43qgPpwQu1V/W42Ik6NcXFP6Ss0rgQ5B/VuqqQ1txDrAy3CPzl3uu9++FMdW4INfZ2rlW9l+zSsqFl1k0n2sYCRPcn2Cw+pjL9uSI6x3I52E5SzftPIn47PJOP3gWwd3lfrkMoqvRY9PAZcM17v5evulMpEmOD9u8UuOcDPgRAGiIXsewb6IOP7oOo4E=
+
+install:
+  - npm install
+  - npm install -g codecov
+  - npm install -g lerna
+
+script:
+  - cd packages/ia-icons
+  - npm i
+  - npm dedupe
+  - npm run test
+
+after_success:
+  - codecov
