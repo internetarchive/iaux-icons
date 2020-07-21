@@ -2,8 +2,6 @@ import { html } from 'lit-html';
 
 export default html`
   <svg
-    width="40px"
-    height="40px"
     viewBox="0 0 40 40"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
