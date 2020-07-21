@@ -1,6 +1,6 @@
 {
   "name": "@internetarchive/icon-software",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "SVG software icon",
   "license": "AGPL-3.0-only",
   "main": "index.js",

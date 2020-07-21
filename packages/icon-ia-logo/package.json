@@ -1,6 +1,6 @@
 {
   "name": "@internetarchive/icon-ia-logo",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "SVG Internet Archive logo icon",
   "license": "AGPL-3.0-only",
   "main": "index.js",
