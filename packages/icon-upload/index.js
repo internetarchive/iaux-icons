@@ -2,8 +2,6 @@ import { html } from 'lit-html';
 
 export default html`
   <svg
-    width="40"
-    height="41"
     viewBox="0 0 40 41"
     xmlns="http://www.w3.org/2000/svg"
     aria-labelledby="uploadTitleID uploadDescID"
