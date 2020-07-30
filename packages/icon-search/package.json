@@ -1,6 +1,6 @@
 {
   "name": "@internetarchive/icon-search",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "SVG search icon",
   "license": "AGPL-3.0-only",
   "main": "index.js",
