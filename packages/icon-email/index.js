@@ -1,7 +1,7 @@
 import { html } from 'lit-html';
 
 export default html`
-  <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-labelledby="emailTitleID emailDescID">
+  <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" aria-labelledby="emailTitleID emailDescID">
     <title id="emailTitleID">Email icon</title>
     <desc id="emailDescID">An illustration of an envelope</desc>
     <path
