@@ -1,6 +1,6 @@
 {
   "name": "@internetarchive/icon-donate",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "SVG donate icon",
   "license": "AGPL-3.0-only",
   "main": "index.js",
