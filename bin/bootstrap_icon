@@ -1,0 +1,58 @@
+#!/usr/bin/env node
+
+// Deps
+const fs = require('fs');
+const path = require('path');
+const indexTemplate = require('../scaffold/index.template');
+const packageFileTemplate = require('../scaffold/package.json.template');
+
+// Newline character based on local OS
+const EOL = process.platform === 'win32' ? '\r\n' : '\n';
+
+// Pull variables from command-line arguments. First two are the Node
+// executable path and the path to this file, which are both unused.
+const [_, __, svgFileName, packageName, descriptiveName, dryRun] = process.argv;
+
+if (!svgFileName) {
+  exitWith('No SVG file name given.', 9);
+}
+if (!packageName) {
+  exitWith(`No package name given. A package name must be given.${EOL}The name given acts as a suffix to the full package name, e.g. an argument of "advance" creates a package named "icon-advance".`);
+}
+
+// Read in local SVG file as string
+const svgPath = path.join(__dirname, '..', 'icons', svgFileName);
+
+if (!fs.existsSync(svgPath)) {
+  exitWith(`The SVG file does not exist at path ${svgPath}. Please correct your file name or move your icon to this path`, 9);
+}
+
+const svgString = fs.readFileSync(svgPath, 'utf8').replace(new RegExp(`${EOL}$`), '');
+const packageDir = path.join(__dirname, '..', 'packages', `icon-${packageName}`);
+
+if (fs.existsSync(packageDir)) {
+  return exitWith(`Package icon-${packageName} already exists. Please choose a different name.`, 1);
+}
+
+const indexContents = indexTemplate(svgString);
+const packageContents = packageFileTemplate(packageName, descriptiveName || packageName);
+
+if (dryRun) {
+  console.log('============index.js============');
+  console.log(indexTemplate(svgString));
+  console.log('==========package.json==========');
+  console.log(packageFileTemplate(packageName, descriptiveName || packageName));
+  process.exit(0);
+}
+
+fs.mkdirSync(packageDir);
+fs.writeFileSync(path.join(packageDir, 'index.js'), indexContents);
+fs.writeFileSync(path.join(packageDir, 'package.json'), packageContents);
+fs.copyFileSync(path.join(__dirname, '..', 'scaffold', 'index.d.ts'), path.join(packageDir, 'index.d.ts'));
+
+exitWith(`Package icon-${packageName} created. Navigate to ${packageDir} and run 'npm i' to generate a lock file and install dependencies.`, 0);
+
+function exitWith(message, code) {
+  console.log(message);
+  process.exit(code);
+}
