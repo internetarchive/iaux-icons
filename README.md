@@ -12,3 +12,7 @@ Since Lerna will install a separate instance of LitElement for each package with
 ## Developing
 
 Each package is symlinked within the ia-icons package using Lerna. If you would like to add an icon package to this monorepo, you can start by copying one of the existing icon directories. Next, navigate to ./packages/ia-icons and run `lerna add @internetarchive/icon-${new_icon} --scope=@internetarchive/ia-icons`, where new_icon is your icon package's name. You can then open up ./packages/ia-icons/src/ia-icon.js and import the new icon. Be sure to also add the icon name to index.html so it renders in the demo page.
+
+## Scaffolding a New Icon Package
+
+A Node shell script is provided as bin/bootstrap_icon to make creating a new icon as fast as possible. Copy your SVG icon file to the 'icons' directory and run `bin/bootstrap test.svg icon-name 'icon description'` to generate the necessary files for a new icon package. If you want to inspect the contents of the files that will be written using the supplied arguments, add a final argument 'true' to receive output logged to stdout rather than written to the file system. If no description is provided, a description using the icon name will be created.
