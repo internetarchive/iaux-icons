@@ -3,40 +3,73 @@
 // Deps
 const fs = require('fs');
 const path = require('path');
+const yargs = require('yargs');
 const indexTemplate = require('../scaffold/index.template');
 const packageFileTemplate = require('../scaffold/package.json.template');
 const componentFileTemplate = require('../scaffold/component.template');
+const { version } = require('../packages/ia-icons/package.json');
 
 // Newline character based on local OS
 const EOL = process.platform === 'win32' ? '\r\n' : '\n';
 
-// Pull variables from command-line arguments. First two are the Node
-// executable path and the path to this file, which are both unused.
-const [_, __, svgFileName, packageName, descriptiveName, dryRun] = process.argv;
+// Define command and provide help text
+const argv = yargs.command('bootstrap_icon [svg]', 'Generates an icon package', (command) => {
+  command.positional('svg', {
+    describe: 'The name of the svg file located in ./icons',
+  });
+}).option('overwrite', {
+  alias: 'o',
+  type: 'boolean',
+  default: false,
+  description: 'Overwrite existing package contents',
+}).option('package-name', {
+  alias: 'n',
+  type: 'string',
+  description: 'Package name',
+}).option('descriptive-name', {
+  alias: 'd',
+  type: 'string',
+  description: `Name used in the description field of${EOL}package.json`,
+}).option('dry-run', {
+  type: 'boolean',
+  default: false,
+  description: `Output generated file contents to stdout${EOL}instead of file system`,
+}).check(({ _ }) => {
+  if (!_.length) {
+    return errorExit('An SVG file name needs to be supplied. Example: "bin/bootstrap_icon test"', 9);
+  }
+  return true;
+}).argv;
 
-if (!svgFileName) {
-  exitWith('No SVG file name given.', 9);
-}
+const { dryRun, overwrite } = argv;
+const [ svgFileName ] = argv._;
+let { packageName, descriptiveName } = argv;
+
 if (!packageName) {
-  exitWith(`No package name given. A package name must be given.${EOL}The name given acts as a suffix to the full package name, e.g. an argument of "advance" creates a package named "icon-advance".`);
+  warningLog(`No package name given. Using ${svgFileName}.`);
+  packageName = svgFileName;
 }
+
+// child_process.spawn is left padding the value of this argument
+packageName = packageName.trim();
+descriptiveName = descriptiveName ? descriptiveName.trim() : packageName;
 
 // Read in local SVG file as string
-const svgPath = path.join(__dirname, '..', 'icons', svgFileName);
+const svgPath = path.join(__dirname, '..', 'icons', `${svgFileName}.svg`);
 
 if (!fs.existsSync(svgPath)) {
-  exitWith(`The SVG file does not exist at path ${svgPath}. Please correct your file name or move your icon to this path`, 9);
+  errorExit(`The SVG file does not exist at path ${svgPath}. Please correct your file name or move your icon to this path`, 9);
 }
 
 const svgString = fs.readFileSync(svgPath, 'utf8').replace(new RegExp(`${EOL}$`), '');
 const packageDir = path.join(__dirname, '..', 'packages', `icon-${packageName}`);
 
-if (fs.existsSync(packageDir)) {
-  return exitWith(`Package icon-${packageName} already exists. Please choose a different name.`, 1);
+if (fs.existsSync(packageDir) && !overwrite) {
+  return errorExit(`Package icon-${packageName} already exists. Please choose a different name.`, 1);
 }
 
 const indexContents = indexTemplate(svgString);
-const packageContents = packageFileTemplate(packageName, descriptiveName || packageName);
+const packageContents = packageFileTemplate(packageName, descriptiveName, version);
 const componentContents = componentFileTemplate(packageName);
 
 if (dryRun) {
@@ -49,15 +82,35 @@ if (dryRun) {
   process.exit(0);
 }
 
+if (fs.existsSync(packageDir)) {
+  fs.rmdirSync(packageDir, { recursive: true });
+}
 fs.mkdirSync(packageDir);
 fs.writeFileSync(path.join(packageDir, 'index.js'), indexContents);
 fs.writeFileSync(path.join(packageDir, 'package.json'), packageContents);
 fs.writeFileSync(path.join(packageDir, `icon-${packageName}.js`), componentContents);
 fs.copyFileSync(path.join(__dirname, '..', 'scaffold', 'index.d.ts'), path.join(packageDir, 'index.d.ts'));
+fs.copyFileSync(svgPath, path.join(packageDir, `${svgFileName}.svg`));
 
-exitWith(`Package icon-${packageName} created. Navigate to ${packageDir} and run 'npm i' to generate a lock file and install dependencies.`, 0);
+successExit(`Package icon-${packageName} created. Navigate to ${packageDir} and run 'npm i' to generate a lock file and install dependencies.`);
 
-function exitWith(message, code) {
-  console.log(message);
+function errorExit(message, code) {
+  exitWith(message, code, '31');
+}
+
+function successExit(message) {
+  exitWith(message, 0, '32');
+}
+
+function warningExit(message) {
+  exitWith(message, 0, '33');
+}
+
+function exitWith(message, code, color) {
+  console.log(`\x1b[${color}m%s\x1b[0m`, message);
   process.exit(code);
+}
+
+function warningLog(message) {
+  console.log('\x1b[33m%s\x1b[0m', message);
 }

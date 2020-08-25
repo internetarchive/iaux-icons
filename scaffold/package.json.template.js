@@ -1,6 +1,6 @@
-module.exports = (packageName, descriptiveName) => `{
+module.exports = (packageName, descriptiveName, version) => `{
   "name": "@internetarchive/icon-${packageName}",
-  "version": "0.4.0",
+  "version": "${version}",
   "description": "SVG ${descriptiveName} icon",
   "license": "AGPL-3.0-only",
   "main": "index.js",
