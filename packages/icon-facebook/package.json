@@ -1,6 +1,6 @@
 {
   "name": "@internetarchive/icon-facebook",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "SVG Facebook icon",
   "license": "AGPL-3.0-only",
   "main": "index.js",
