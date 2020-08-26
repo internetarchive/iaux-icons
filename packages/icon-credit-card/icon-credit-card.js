@@ -1,6 +1,7 @@
 import icon from './index.js';
+import { css, LitElement } from 'lit-element';
 
-class IAIconCredit-card extends LitElement {
+class IAIconCreditCard extends LitElement {
   static get styles() {
     return css`
       :host {
@@ -23,6 +24,6 @@ class IAIconCredit-card extends LitElement {
   }
 }
 
-customElements.define('ia-icon-credit-card', IAIconCredit-card);
+customElements.define('ia-icon-credit-card', IAIconCreditCard);
 
-export default IAIcon;
+export default IAIconCreditCard;

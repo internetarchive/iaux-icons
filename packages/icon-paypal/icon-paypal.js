@@ -1,4 +1,5 @@
 import icon from './index.js';
+import { css, LitElement } from 'lit-element';
 
 class IAIconPaypal extends LitElement {
   static get styles() {
@@ -25,4 +26,4 @@ class IAIconPaypal extends LitElement {
 
 customElements.define('ia-icon-paypal', IAIconPaypal);
 
-export default IAIcon;
+export default IAIconPaypal;

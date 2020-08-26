@@ -1,6 +1,7 @@
 import icon from './index.js';
+import { css, LitElement } from 'lit-element';
 
-class IAIconLocale-pin extends LitElement {
+class IAIconLocalePin extends LitElement {
   static get styles() {
     return css`
       :host {
@@ -23,6 +24,6 @@ class IAIconLocale-pin extends LitElement {
   }
 }
 
-customElements.define('ia-icon-locale-pin', IAIconLocale-pin);
+customElements.define('ia-icon-locale-pin', IAIconLocalePin);
 
-export default IAIcon;
+export default IAIconLocalePin;

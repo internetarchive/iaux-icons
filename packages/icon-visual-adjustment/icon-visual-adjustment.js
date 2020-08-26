@@ -1,6 +1,7 @@
 import icon from './index.js';
+import { css, LitElement } from 'lit-element';
 
-class IAIconVisual-adjustment extends LitElement {
+class IAIconVisualAdjustment extends LitElement {
   static get styles() {
     return css`
       :host {
@@ -23,6 +24,6 @@ class IAIconVisual-adjustment extends LitElement {
   }
 }
 
-customElements.define('ia-icon-visual-adjustment', IAIconVisual-adjustment);
+customElements.define('ia-icon-visual-adjustment', IAIconVisualAdjustment);
 
-export default IAIcon;
+export default IAIconVisualAdjustment;

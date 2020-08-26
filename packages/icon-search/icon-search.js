@@ -1,4 +1,5 @@
 import icon from './index.js';
+import { css, LitElement } from 'lit-element';
 
 class IAIconSearch extends LitElement {
   static get styles() {
@@ -25,4 +26,4 @@ class IAIconSearch extends LitElement {
 
 customElements.define('ia-icon-search', IAIconSearch);
 
-export default IAIcon;
+export default IAIconSearch;

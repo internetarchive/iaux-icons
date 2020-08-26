@@ -1,4 +1,5 @@
 import icon from './index.js';
+import { css, LitElement } from 'lit-element';
 
 class IAIconEmail extends LitElement {
   static get styles() {
@@ -25,4 +26,4 @@ class IAIconEmail extends LitElement {
 
 customElements.define('ia-icon-email', IAIconEmail);
 
-export default IAIcon;
+export default IAIconEmail;

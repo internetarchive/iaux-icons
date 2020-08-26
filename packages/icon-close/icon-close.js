@@ -1,4 +1,5 @@
 import icon from './index.js';
+import { css, LitElement } from 'lit-element';
 
 class IAIconClose extends LitElement {
   static get styles() {
@@ -25,4 +26,4 @@ class IAIconClose extends LitElement {
 
 customElements.define('ia-icon-close', IAIconClose);
 
-export default IAIcon;
+export default IAIconClose;

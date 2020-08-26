@@ -1,4 +1,5 @@
 import icon from './index.js';
+import { css, LitElement } from 'lit-element';
 
 class IAIconAudio extends LitElement {
   static get styles() {
@@ -25,4 +26,4 @@ class IAIconAudio extends LitElement {
 
 customElements.define('ia-icon-audio', IAIconAudio);
 
-export default IAIcon;
+export default IAIconAudio;

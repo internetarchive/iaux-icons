@@ -1,4 +1,5 @@
 import icon from './index.js';
+import { css, LitElement } from 'lit-element';
 
 class IAIconEllipses extends LitElement {
   static get styles() {
@@ -25,4 +26,4 @@ class IAIconEllipses extends LitElement {
 
 customElements.define('ia-icon-ellipses', IAIconEllipses);
 
-export default IAIcon;
+export default IAIconEllipses;

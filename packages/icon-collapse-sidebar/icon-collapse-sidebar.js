@@ -1,6 +1,7 @@
 import icon from './index.js';
+import { css, LitElement } from 'lit-element';
 
-class IAIconCollapse-sidebar extends LitElement {
+class IAIconCollapseSidebar extends LitElement {
   static get styles() {
     return css`
       :host {
@@ -23,6 +24,6 @@ class IAIconCollapse-sidebar extends LitElement {
   }
 }
 
-customElements.define('ia-icon-collapse-sidebar', IAIconCollapse-sidebar);
+customElements.define('ia-icon-collapse-sidebar', IAIconCollapseSidebar);
 
-export default IAIcon;
+export default IAIconCollapseSidebar;

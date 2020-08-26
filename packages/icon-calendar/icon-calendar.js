@@ -1,4 +1,5 @@
 import icon from './index.js';
+import { css, LitElement } from 'lit-element';
 
 class IAIconCalendar extends LitElement {
   static get styles() {
@@ -25,4 +26,4 @@ class IAIconCalendar extends LitElement {
 
 customElements.define('ia-icon-calendar', IAIconCalendar);
 
-export default IAIcon;
+export default IAIconCalendar;

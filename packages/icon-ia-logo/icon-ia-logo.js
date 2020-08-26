@@ -1,6 +1,7 @@
 import icon from './index.js';
+import { css, LitElement } from 'lit-element';
 
-class IAIconIa-logo extends LitElement {
+class IAIconIaLogo extends LitElement {
   static get styles() {
     return css`
       :host {
@@ -23,6 +24,6 @@ class IAIconIa-logo extends LitElement {
   }
 }
 
-customElements.define('ia-icon-ia-logo', IAIconIa-logo);
+customElements.define('ia-icon-ia-logo', IAIconIaLogo);
 
-export default IAIcon;
+export default IAIconIaLogo;

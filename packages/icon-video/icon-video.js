@@ -1,4 +1,5 @@
 import icon from './index.js';
+import { css, LitElement } from 'lit-element';
 
 class IAIconVideo extends LitElement {
   static get styles() {
@@ -25,4 +26,4 @@ class IAIconVideo extends LitElement {
 
 customElements.define('ia-icon-video', IAIconVideo);
 
-export default IAIcon;
+export default IAIconVideo;

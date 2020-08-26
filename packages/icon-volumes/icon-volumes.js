@@ -1,4 +1,5 @@
 import icon from './index.js';
+import { css, LitElement } from 'lit-element';
 
 class IAIconVolumes extends LitElement {
   static get styles() {
@@ -25,4 +26,4 @@ class IAIconVolumes extends LitElement {
 
 customElements.define('ia-icon-volumes', IAIconVolumes);
 
-export default IAIcon;
+export default IAIconVolumes;

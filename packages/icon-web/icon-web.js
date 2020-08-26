@@ -1,4 +1,5 @@
 import icon from './index.js';
+import { css, LitElement } from 'lit-element';
 
 class IAIconWeb extends LitElement {
   static get styles() {
@@ -25,4 +26,4 @@ class IAIconWeb extends LitElement {
 
 customElements.define('ia-icon-web', IAIconWeb);
 
-export default IAIcon;
+export default IAIconWeb;

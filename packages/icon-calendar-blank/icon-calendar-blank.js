@@ -1,6 +1,7 @@
 import icon from './index.js';
+import { css, LitElement } from 'lit-element';
 
-class IAIconCalendar-blank extends LitElement {
+class IAIconCalendarBlank extends LitElement {
   static get styles() {
     return css`
       :host {
@@ -23,6 +24,6 @@ class IAIconCalendar-blank extends LitElement {
   }
 }
 
-customElements.define('ia-icon-calendar-blank', IAIconCalendar-blank);
+customElements.define('ia-icon-calendar-blank', IAIconCalendarBlank);
 
-export default IAIcon;
+export default IAIconCalendarBlank;

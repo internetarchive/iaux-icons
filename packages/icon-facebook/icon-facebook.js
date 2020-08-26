@@ -1,4 +1,5 @@
 import icon from './index.js';
+import { css, LitElement } from 'lit-element';
 
 class IAIconFacebook extends LitElement {
   static get styles() {
@@ -25,4 +26,4 @@ class IAIconFacebook extends LitElement {
 
 customElements.define('ia-icon-facebook', IAIconFacebook);
 
-export default IAIcon;
+export default IAIconFacebook;

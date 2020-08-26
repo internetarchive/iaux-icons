@@ -1,4 +1,5 @@
 import icon from './index.js';
+import { css, LitElement } from 'lit-element';
 
 class IAIconTumblr extends LitElement {
   static get styles() {
@@ -25,4 +26,4 @@ class IAIconTumblr extends LitElement {
 
 customElements.define('ia-icon-tumblr', IAIconTumblr);
 
-export default IAIcon;
+export default IAIconTumblr;

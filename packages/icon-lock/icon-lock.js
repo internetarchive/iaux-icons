@@ -1,4 +1,5 @@
 import icon from './index.js';
+import { css, LitElement } from 'lit-element';
 
 class IAIconLock extends LitElement {
   static get styles() {
@@ -25,4 +26,4 @@ class IAIconLock extends LitElement {
 
 customElements.define('ia-icon-lock', IAIconLock);
 
-export default IAIcon;
+export default IAIconLock;

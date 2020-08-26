@@ -1,4 +1,5 @@
 import icon from './index.js';
+import { css, LitElement } from 'lit-element';
 
 class IAIconApplepay extends LitElement {
   static get styles() {
@@ -25,4 +26,4 @@ class IAIconApplepay extends LitElement {
 
 customElements.define('ia-icon-applepay', IAIconApplepay);
 
-export default IAIcon;
+export default IAIconApplepay;

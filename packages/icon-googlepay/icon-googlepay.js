@@ -1,4 +1,5 @@
 import icon from './index.js';
+import { css, LitElement } from 'lit-element';
 
 class IAIconGooglepay extends LitElement {
   static get styles() {
@@ -25,4 +26,4 @@ class IAIconGooglepay extends LitElement {
 
 customElements.define('ia-icon-googlepay', IAIconGooglepay);
 
-export default IAIcon;
+export default IAIconGooglepay;
