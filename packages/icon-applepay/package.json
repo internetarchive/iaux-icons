@@ -1,6 +1,6 @@
 {
   "name": "@internetarchive/icon-applepay",
-  "version": "0.5.0",
+  "version": "1.0.0",
   "description": "SVG ApplePay icon",
   "license": "AGPL-3.0-only",
   "main": "index.js",

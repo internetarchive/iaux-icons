@@ -1,6 +1,6 @@
 {
   "name": "@internetarchive/icon-paypal",
-  "version": "0.5.0",
+  "version": "1.0.0",
   "description": "SVG PayPal icon",
   "license": "AGPL-3.0-only",
   "main": "index.js",
