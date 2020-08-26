@@ -1,0 +1,18 @@
+#!/usr/bin/env node
+
+const fs = require('fs');
+const path = require('path');
+const { spawn } = require('child_process');
+
+const svgIcons = fs.readdirSync(path.join(__dirname, '..', 'icons'));
+
+svgIcons.forEach((svgIcon) => {
+  const packageName = svgIcon.replace(/\.svg$/, '');
+  cyanLog(`Creating package ${packageName}`);
+  const stream = spawn('bin/bootstrap_icon', [packageName, `-n ${packageName}`, `-d ${packageName}`, `-o`]);
+  stream.stdout.pipe(process.stdout);
+});
+
+function cyanLog(message) {
+  console.log('\x1b[36m%s\x1b[0m', message);
+}
