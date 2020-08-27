@@ -1,7 +1,7 @@
 import icon from './index.js';
 import { css, LitElement } from 'lit-element';
 
-class IAIconPinterst extends LitElement {
+class IAIconPinterest extends LitElement {
   static get styles() {
     return css`
       :host {
@@ -24,6 +24,6 @@ class IAIconPinterst extends LitElement {
   }
 }
 
-customElements.define('ia-icon-pinterst', IAIconPinterst);
+customElements.define('ia-icon-pinterest', IAIconPinterest);
 
-export default IAIconPinterst;
+export default IAIconPinterest;
