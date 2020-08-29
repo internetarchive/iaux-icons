@@ -82,6 +82,11 @@ class IAIcon extends LitElement {
 
   static get styles() {
     return css`
+      svg {
+        width: var(--iconWidth, 'auto');
+        height: var(--iconHeight, 'auto');
+      }
+
       .fill-color {
         fill: var(--iconFillColor);
       }
