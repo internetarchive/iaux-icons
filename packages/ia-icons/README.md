@@ -14,6 +14,8 @@ import { IAIcon } from './src/ia-icon';
 ia-icon {
   --iconFillColor: #0066cc;
   --iconStrokeColor: #ffffff;
+  --iconWidth: 40px;
+  --iconHeight: 40px;
 }
 ```
 
@@ -34,3 +36,10 @@ Run the tests with `yarn test`.
 * /src/ia-icons.js - Class definitions for each LitElement
 * /src/icons - Place icon SVGs here. Convention is to export a Lit-html template
 * /test - unit tests
+
+## Single Icons
+
+This package is part of [a monorepo](https://github.com/internetarchive/iaux-icons)
+that includes a published package for each icon included here. Each package
+includes a raw SVG file, a LitHtml template literal, and a defined custom
+element created with LitElement.
