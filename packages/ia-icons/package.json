@@ -1,6 +1,6 @@
 {
   "name": "@internetarchive/ia-icons",
-  "version": "1.1.3",
+  "version": "1.2.0",
   "description": "SVG icon library for use in archive.org components",
   "license": "AGPL-3.0-only",
   "main": "index.js",
@@ -45,8 +45,8 @@
     "@internetarchive/icon-link": "^1.1.3",
     "@internetarchive/icon-locale-pin": "^1.1.3",
     "@internetarchive/icon-lock": "^1.1.3",
-    "@internetarchive/icon-magnify-minus": "^1.1.3",
-    "@internetarchive/icon-magnify-plus": "^1.1.3",
+    "@internetarchive/icon-magnify-minus": "^1.2.0",
+    "@internetarchive/icon-magnify-plus": "^1.2.0",
     "@internetarchive/icon-paypal": "^1.1.3",
     "@internetarchive/icon-pinterest": "^1.1.3",
     "@internetarchive/icon-search": "^1.1.3",
