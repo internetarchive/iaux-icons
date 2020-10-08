@@ -4,11 +4,12 @@ import applePay from '@internetarchive/icon-applepay';
 import audio from '@internetarchive/icon-audio';
 import calendar from '@internetarchive/icon-calendar';
 import calendarBlank from '@internetarchive/icon-calendar-blank';
-import collapseSidebar from '@internetarchive/icon-collapse-sidebar';
 import close from '@internetarchive/icon-close';
+import collapseSidebar from '@internetarchive/icon-collapse-sidebar';
 import creditCard from '@internetarchive/icon-credit-card';
 import donate from '@internetarchive/icon-donate';
 import download from '@internetarchive/icon-dl';
+import editPencil from '@internetarchive/icon-edit-pencil';
 import ellipses from '@internetarchive/icon-ellipses';
 import email from '@internetarchive/icon-email';
 import facebook from '@internetarchive/icon-facebook';
@@ -18,6 +19,8 @@ import images from '@internetarchive/icon-images';
 import link from '@internetarchive/icon-link';
 import localePin from '@internetarchive/icon-locale-pin';
 import lock from '@internetarchive/icon-lock';
+import magnifyMinus from '@internetarchive/icon-magnify-minus';
+import magnifyPlus from '@internetarchive/icon-magnify-plus';
 import paypal from '@internetarchive/icon-paypal';
 import pinterest from '@internetarchive/icon-pinterest';
 import search from '@internetarchive/icon-search';
@@ -41,11 +44,12 @@ const iconTemplates = {
   audio,
   calendar,
   calendarBlank,
-  collapseSidebar,
   close,
+  collapseSidebar,
   creditCard,
   donate,
   download,
+  editPencil,
   ellipses,
   email,
   facebook,
@@ -55,6 +59,8 @@ const iconTemplates = {
   link,
   localePin,
   lock,
+  magnifyMinus,
+  magnifyPlus,
   paypal,
   pinterest,
   search,
