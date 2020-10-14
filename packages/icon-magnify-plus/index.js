@@ -2,9 +2,7 @@ import { html } from 'lit-html';
 
 export default html`
 <svg
-  height="18"
   viewBox="0 0 18 18"
-  width="18"
   xmlns="http://www.w3.org/2000/svg"
   aria-labelledby="magnify-plusTitleID magnify-plusDescID"
 >
@@ -19,5 +17,4 @@ export default html`
     <path d="m7.75 4v2.25h2.25v1.5h-2.25v2.25h-1.5v-2.25h-2.25v-1.5h2.25v-2.25z"/>
   </g>
 </svg>
-
 `;
