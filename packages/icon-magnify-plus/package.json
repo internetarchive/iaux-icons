@@ -1,6 +1,6 @@
 {
   "name": "@internetarchive/icon-magnify-plus",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "SVG magnify-plus icon",
   "license": "AGPL-3.0-only",
   "main": "index.js",
