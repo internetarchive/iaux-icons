@@ -1,6 +1,6 @@
 {
   "name": "@internetarchive/ia-icons",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "SVG icon library for use in archive.org components",
   "license": "AGPL-3.0-only",
   "main": "index.js",
