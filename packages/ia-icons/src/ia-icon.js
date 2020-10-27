@@ -13,6 +13,8 @@ import editPencil from '@internetarchive/icon-edit-pencil';
 import ellipses from '@internetarchive/icon-ellipses';
 import email from '@internetarchive/icon-email';
 import facebook from '@internetarchive/icon-facebook';
+import favorite from '@internetarchive/icon-favorite';
+import flag from '@internetarchive/icon-flag';
 import googlePay from '@internetarchive/icon-googlepay';
 import iaLogo from '@internetarchive/icon-ia-logo';
 import images from '@internetarchive/icon-images';
@@ -53,6 +55,8 @@ const iconTemplates = {
   ellipses,
   email,
   facebook,
+  favorite,
+  flag,
   googlePay,
   iaLogo,
   images,
