@@ -26,6 +26,8 @@ import pinterest from '@internetarchive/icon-pinterest';
 import search from '@internetarchive/icon-search';
 import share from '@internetarchive/icon-share';
 import software from '@internetarchive/icon-software';
+import sortAscending from '@internetarchive/icon-sort-ascending';
+import sortDescending from '@internetarchive/icon-sort-descending';
 import texts from '@internetarchive/icon-texts';
 import toc from '@internetarchive/icon-toc';
 import tumblr from '@internetarchive/icon-tumblr';
@@ -66,6 +68,8 @@ const iconTemplates = {
   search,
   share,
   software,
+  sortAscending,
+  sortDescending,
   texts,
   toc,
   tumblr,
