@@ -3,6 +3,7 @@
   viewBox="0 0 18 18" 
   width="18" 
   xmlns="http://www.w3.org/2000/svg"
+  aria-labelledby="sortAscendingTitleID sortAscendingDescID"
 >
   <title id="sortDescendingTitleID">Sort descending icon</title>
   <desc id="sortDescendingDescID">An illustration of an arrow pointing downwards from A-Z.</desc>
