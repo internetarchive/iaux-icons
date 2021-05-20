@@ -5,6 +5,7 @@ import audio from '@internetarchive/icon-audio';
 import calendar from '@internetarchive/icon-calendar';
 import calendarBlank from '@internetarchive/icon-calendar-blank';
 import close from '@internetarchive/icon-close';
+import closeCircle from '@internetarchive/icon-close-circle';
 import collapseSidebar from '@internetarchive/icon-collapse-sidebar';
 import creditCard from '@internetarchive/icon-credit-card';
 import donate from '@internetarchive/icon-donate';
@@ -45,6 +46,7 @@ const iconTemplates = {
   calendar,
   calendarBlank,
   close,
+  closeCircle,
   collapseSidebar,
   creditCard,
   donate,
