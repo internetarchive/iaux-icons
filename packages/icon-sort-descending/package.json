@@ -1,6 +1,6 @@
 {
   "name": "@internetarchive/icon-sort-descending",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "SVG sort-descending icon",
   "license": "AGPL-3.0-only",
   "main": "index.js",
