@@ -40,6 +40,7 @@ import video from '@internetarchive/icon-video';
 import visualAdjustment from '@internetarchive/icon-visual-adjustment';
 import volumes from '@internetarchive/icon-volumes';
 import web from '@internetarchive/icon-web';
+import info from '@internetarchive/icon-info';
 
 const iconTemplates = {
   applePay,
@@ -83,6 +84,7 @@ const iconTemplates = {
   visualAdjustment,
   volumes,
   web,
+  info,
 };
 
 class IAIcon extends LitElement {
