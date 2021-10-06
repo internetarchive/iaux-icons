@@ -1,7 +1,7 @@
 {
   "name": "@internetarchive/icon-info",
-  "version": "1.2.3",
-  "description": "SVG info icon",
+  "version": "1.2.5",
+  "description": "Informative icon",
   "license": "AGPL-3.0-only",
   "main": "index.js",
   "module": "index.js",

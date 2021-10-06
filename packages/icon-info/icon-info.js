@@ -25,5 +25,4 @@ class IAIconInfo extends LitElement {
 }
 
 customElements.define('ia-icon-info', IAIconInfo);
-
 export default IAIconInfo;
