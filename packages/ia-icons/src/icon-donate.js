@@ -1,4 +1,4 @@
-import { css } from 'lit-element';
+import { css } from 'lit';
 import IAIcon from './ia-icon';
 
 class IconDonate extends IAIcon {

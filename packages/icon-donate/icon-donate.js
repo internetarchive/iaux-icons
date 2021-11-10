@@ -1,5 +1,5 @@
 import icon from './index.js';
-import { css, LitElement } from 'lit-element';
+import { css, LitElement } from 'lit';
 
 class IAIconDonate extends LitElement {
   static get styles() {

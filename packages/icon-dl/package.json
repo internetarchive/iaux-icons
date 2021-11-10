@@ -13,9 +13,6 @@
   "scripts": {
     "lint": "eslint ."
   },
-  "dependencies": {
-    "lit-html": "^1.2.1"
-  },
   "devDependencies": {
     "@open-wc/eslint-config": "^1.0.0",
     "eslint": "^6.1.0",
@@ -38,5 +35,8 @@
     "extends": [
       "@open-wc/eslint-config"
     ]
+  },
+  "dependencies": {
+    "lit": "^2.0.2"
   }
 }
