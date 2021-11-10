@@ -17,13 +17,10 @@ jobs:
         node-version: 16.x
 
     - name: Install dependencies
-      run: cd packages/ia-icons
-      run: npm install
-      run: npm dedupe
+      run: cd packages/ia-icons && npm install && npm dedupe
 
     - name: Run tests
-      run: cd packages/ia-icons
-      run: npm run test
+      run: cd packages/ia-icons && npm run test
 
     - name: Upload reports
       run: npx codecov
