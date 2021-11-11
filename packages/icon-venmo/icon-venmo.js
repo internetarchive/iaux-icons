@@ -1,5 +1,5 @@
 import icon from './index.js';
-import { css, LitElement } from 'lit-element';
+import { css, LitElement } from 'lit';
 
 class IAIconVenmo extends LitElement {
   static get styles() {

@@ -1,4 +1,4 @@
-import { LitElement, html, css } from 'lit-element';
+import { LitElement, html, css } from 'lit';
 import advance from '@internetarchive/icon-advance';
 import applePay from '@internetarchive/icon-applepay';
 import audio from '@internetarchive/icon-audio';

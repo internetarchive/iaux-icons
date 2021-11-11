@@ -2,7 +2,7 @@ module.exports = (iconName) => {
   const className = iconName.split('-').reduce((str, word) => `${str}${word.substr(0, 1).toUpperCase()}${word.substr(1)}`, '');
 
   return `import icon from './index.js';
-import { css, LitElement } from 'lit-element';
+import { css, LitElement } from 'lit';
 
 class IAIcon${className} extends LitElement {
   static get styles() {

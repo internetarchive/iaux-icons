@@ -1,4 +1,4 @@
-import { css, LitElement } from 'lit-element';
+import { css, LitElement } from 'lit';
 import icon from './index.js';
 
 class IAIconCloseCircle extends LitElement {
