@@ -1,6 +1,6 @@
 {
   "name": "@internetarchive/icon-ellipses",
-  "version": "1.3.2-alpha.0",
+  "version": "1.3.2",
   "description": "SVG ellipses icon",
   "license": "AGPL-3.0-only",
   "main": "index.js",
