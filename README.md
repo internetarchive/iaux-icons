@@ -11,7 +11,7 @@ Since Lerna will install a separate instance of LitElement for each package with
 
 ## Scaffolding a New Icon Package
 
-A Node shell script is provided as bin/bootstrap_icon to make creating a new icon as fast as possible. Copy your SVG icon file to the 'icons' directory and run `bin/bootstrap test.svg icon-name 'icon description'` to generate the necessary files for a new icon package. If you want to inspect the contents of the files that will be written using the supplied arguments, add a final argument 'true' to receive output logged to stdout rather than written to the file system. If no description is provided, a description using the icon name will be created. Note that you will need to add the new package to the ia-icons package's dependencies before publishing via Lerna.
+A Node shell script is provided as bin/bootstrap_icon to make creating a new icon as fast as possible. Copy your SVG icon file to the 'icons' directory and run `bin/bootstrap_icon svg-filename-without-extension icon-name 'icon description'` to generate the necessary files for a new icon package. If you want to inspect the contents of the files that will be written using the supplied arguments, add a final argument 'true' to receive output logged to stdout rather than written to the file system. If no description is provided, a description using the icon name will be created. Note that you will need to add the new package to the ia-icons package's dependencies before publishing via Lerna.
 
 ## Developing
 
