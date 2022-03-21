@@ -1,6 +1,6 @@
 {
   "name": "@internetarchive/icon-dl",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "description": "SVG download icon",
   "//": "NPM won't allow the word 'download' in a package, so the package name is concatenated",
   "license": "AGPL-3.0-only",
