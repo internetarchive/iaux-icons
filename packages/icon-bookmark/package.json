@@ -5,7 +5,7 @@
   "author": "Shane Riley, Internet Archive",
   "license": "AGPL-3.0-only",
   "main": "index.js",
-  "module": "index.js",
+  "module": "icon-bookmark.js",
   "publishConfig": {
     "access": "public"
   },

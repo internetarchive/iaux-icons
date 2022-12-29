@@ -4,7 +4,7 @@
   "description": "SVG user icon",
   "license": "AGPL-3.0-only",
   "main": "index.js",
-  "module": "index.js",
+  "module": "icon-user.js",
   "types": "index.d.ts",
   "publishConfig": {
     "access": "public"

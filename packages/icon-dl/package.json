@@ -5,7 +5,7 @@
   "//": "NPM won't allow the word 'download' in a package, so the package name is concatenated",
   "license": "AGPL-3.0-only",
   "main": "index.js",
-  "module": "index.js",
+  "module": "icon-dl.js",
   "types": "index.d.ts",
   "publishConfig": {
     "access": "public"

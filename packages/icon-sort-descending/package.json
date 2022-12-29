@@ -4,7 +4,7 @@
   "description": "SVG sort-descending icon",
   "license": "AGPL-3.0-only",
   "main": "index.js",
-  "module": "index.js",
+  "module": "con-sort-descending.js",
   "types": "index.d.ts",
   "publishConfig": {
     "access": "public"

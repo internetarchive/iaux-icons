@@ -4,7 +4,7 @@
   "description": "SVG collapse sidebar icon",
   "license": "AGPL-3.0-only",
   "main": "index.js",
-  "module": "index.js",
+  "module": "icon-collapse-sidebar.js",
   "types": "index.d.ts",
   "publishConfig": {
     "access": "public"

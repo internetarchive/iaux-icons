@@ -4,7 +4,7 @@
   "description": "SVG link icon",
   "license": "AGPL-3.0-only",
   "main": "index.js",
-  "module": "index.js",
+  "module": "icon-link.js",
   "types": "index.d.ts",
   "publishConfig": {
     "access": "public"
