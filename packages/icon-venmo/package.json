@@ -1,6 +1,6 @@
 {
   "name": "@internetarchive/icon-venmo",
-  "version": "1.4.0-alpha.0",
+  "version": "1.3.4",
   "description": "SVG venmo icon",
   "license": "AGPL-3.0-only",
   "main": "index.js",
