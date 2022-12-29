@@ -123,4 +123,6 @@ class IAIcon extends LitElement {
   }
 }
 
+customElements.define('ia-icon', IAIcon);
+
 export default IAIcon;
