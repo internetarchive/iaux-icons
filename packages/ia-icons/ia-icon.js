@@ -1,5 +1,5 @@
+/* eslint-disable import/no-duplicates */
+import './src/ia-icon';
 import IAIcon from './src/ia-icon';
-
-customElements.define('ia-icon', IAIcon);
 
 export default IAIcon;
