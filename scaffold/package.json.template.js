@@ -4,7 +4,7 @@ module.exports = (packageName, descriptiveName, version) => `{
   "description": "SVG ${descriptiveName} icon",
   "license": "AGPL-3.0-only",
   "main": "index.js",
-  "module": "index.js",
+  "module": "icon-${packageName}.js",
   "types": "index.d.ts",
   "publishConfig": {
     "access": "public"
