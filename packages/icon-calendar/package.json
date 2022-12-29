@@ -1,6 +1,6 @@
 {
   "name": "@internetarchive/icon-calendar",
-  "version": "1.3.2",
+  "version": "1.4.0-alpha.0",
   "description": "SVG calendar icon",
   "license": "AGPL-3.0-only",
   "main": "index.js",
