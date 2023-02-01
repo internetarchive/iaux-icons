@@ -2,9 +2,7 @@ import { html } from 'lit';
 
 export default html`
   <svg
-    height="12"
     viewBox="0 0 12 12"
-    width="12"
     xmlns="http://www.w3.org/2000/svg"
   >
     <title id="closeCircleTitleID">Close circle icon</title>
