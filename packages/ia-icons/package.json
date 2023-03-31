@@ -1,6 +1,6 @@
 {
   "name": "@internetarchive/ia-icons",
-  "version": "1.3.4",
+  "version": "1.3.5",
   "description": "SVG icon library for use in archive.org components",
   "license": "AGPL-3.0-only",
   "main": "index.js",
@@ -25,7 +25,7 @@
     "test:bs": "karma start karma.bs.config.js --compatibility all --coverage"
   },
   "dependencies": {
-    "@internetarchive/ia-icons": "^1.3.4",
+    "@internetarchive/ia-icons": "^1.3.5",
     "@internetarchive/icon-advance": "^1.3.4",
     "@internetarchive/icon-applepay": "^1.3.4",
     "@internetarchive/icon-audio": "^1.3.4",
@@ -33,7 +33,7 @@
     "@internetarchive/icon-calendar": "^1.3.4",
     "@internetarchive/icon-calendar-blank": "^1.3.4",
     "@internetarchive/icon-close": "^1.3.4",
-    "@internetarchive/icon-close-circle": "^1.3.4",
+    "@internetarchive/icon-close-circle": "^1.3.5",
     "@internetarchive/icon-collapse-sidebar": "^1.3.4",
     "@internetarchive/icon-credit-card": "^1.3.4",
     "@internetarchive/icon-dl": "^1.3.4",
