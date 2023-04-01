@@ -1,6 +1,6 @@
 {
   "name": "@internetarchive/icon-close-circle",
-  "version": "1.3.5",
+  "version": "1.3.6",
   "description": "SVG close circle icon",
   "license": "AGPL-3.0-only",
   "main": "index.js",
