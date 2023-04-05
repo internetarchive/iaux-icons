@@ -5,8 +5,8 @@ class IAIconCloseCircle extends LitElement {
   static get styles() {
     return css`
       :host {
-        width: var(--iconWidth, 'auto');
-        height: var(--iconHeight, 'auto');
+        width: var(--iconWidth, 12px);
+        height: var(--iconHeight, 12px);
       }
 
       .fill-color {
