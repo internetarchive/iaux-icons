@@ -4,10 +4,7 @@ export default html`
 <svg
   viewBox="0 0 100 100"
   xmlns="http://www.w3.org/2000/svg"
-  aria-labelledby="searchTitleID searchDescID"
 >
-  <title id="searchTitleID">Search icon</title>
-  <desc id="searchDescID">Search for something.</desc>
   <path
     class="fill-color"
     fill="none"

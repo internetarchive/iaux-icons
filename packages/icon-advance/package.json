@@ -1,16 +1,19 @@
 {
   "name": "@internetarchive/icon-advance",
-  "version": "1.3.4",
+  "version": "1.3.11",
   "description": "SVG advance icon",
   "license": "AGPL-3.0-only",
   "main": "index.js",
-  "module": "index.js",
-  "types": "icon-advance.d.ts",
+  "module": "icon-advance.js",
+  "types": "index.d.ts",
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
     "lint": "eslint ."
+  },
+  "dependencies": {
+    "lit-html": "^1.2.1"
   },
   "devDependencies": {
     "@open-wc/eslint-config": "^1.0.0",
@@ -34,8 +37,5 @@
     "extends": [
       "@open-wc/eslint-config"
     ]
-  },
-  "dependencies": {
-    "lit": "^2.0.2"
   }
 }

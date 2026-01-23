@@ -1,5 +1,5 @@
-import { css, LitElement } from 'lit';
 import icon from './index.js';
+import { css, LitElement } from 'lit';
 
 class IAIconCloseCircle extends LitElement {
   static get styles() {
@@ -10,7 +10,11 @@ class IAIconCloseCircle extends LitElement {
       }
 
       .fill-color {
-        fill: var(--iconFillColor, #999);
+        fill: var(--iconFillColor);
+      }
+
+      .stroke-color {
+        stroke: var(--iconStrokeColor);
       }
     `;
   }

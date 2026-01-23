@@ -5,10 +5,7 @@ export default html`
   viewBox="0 0 21 19"
   version="1.1"
   xmlns="http://www.w3.org/2000/svg"
-  aria-labelledby="advanceTitleID advanceDescID"
 >
-  <title id="advanceTitleID">Advance icon</title>
-  <desc id="advanceDescID">An arrow pointing in a forward direction</desc>
   <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
     <g transform="translate(-200.000000, -15.000000)">
       <g transform="translate(56.922243, 5.000000)">

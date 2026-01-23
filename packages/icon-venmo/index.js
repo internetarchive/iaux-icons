@@ -1,9 +1,7 @@
 import { html } from 'lit';
 
 export default html`
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 449 300" aria-labelledby="venmoTitleID venmoDescID">
-  <title id="venmoTitleID">Venmo icon</title>
-  <desc id="venmoDescID">The Venmo logo</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 449 300">
   <g fill="none">
     <rect width="448.934" height="299.289" fill="#3D95CE" rx="29.929" />
     <path

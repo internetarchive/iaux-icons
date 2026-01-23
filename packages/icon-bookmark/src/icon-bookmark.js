@@ -58,10 +58,7 @@ class IAIconBookmark extends LitElement {
           viewBox="0 0 16 24"
           width="16"
           xmlns="http://www.w3.org/2000/svg"
-          aria-labelledby="bookmarkTitleID bookmarDescID"
         >
-          <title id="bookmarkTitleID">Bookmark icon</title>
-          <desc id="bookmarkDescID">An outline of the shape of a bookmark</desc>
           <path
             id="filled"
             d="m1 0h14c.5522847 0 1 .44771525 1 1v23l-8-5.4545455-8 5.4545455v-23c0-.55228475.44771525-1 1-1z"
