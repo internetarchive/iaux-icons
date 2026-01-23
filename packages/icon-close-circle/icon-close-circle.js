@@ -10,7 +10,7 @@ class IAIconCloseCircle extends LitElement {
       }
 
       .fill-color {
-        fill: var(--iconFillColor);
+        fill: var(--iconFillColor, #999);
       }
 
       .stroke-color {
