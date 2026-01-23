@@ -1,9 +1,7 @@
 import { html } from 'lit';
 
 export default html`
-<svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" aria-labelledby="calendarTitleID calendarDescID">
-  <title id="calendarTitleID">Calendar icon</title>
-  <desc id="calendarDescID">An illustration of a calendar</desc>
+<svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
 
   <g class="fill-color" fill-rule="evenodd">
     <path d="m11.998.857v11h-11.998v-11z" fill-rule="nonzero" />

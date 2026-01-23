@@ -5,10 +5,7 @@ export default html`
   viewBox="0 0 40 40"
   version="1.1"
   xmlns="http://www.w3.org/2000/svg"
-  aria-labelledby="audioTitleID audioDescID"
 >
-  <title id="audioTitleID">Audio icon</title>
-  <desc id="audioDescID">An illustration of an audio speaker.</desc>
   <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
     <g transform="translate(10, 8)" class="fill-color">
       <path

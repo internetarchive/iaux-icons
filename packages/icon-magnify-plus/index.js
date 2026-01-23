@@ -4,10 +4,7 @@ export default html`
 <svg
   viewBox="0 0 100 100"
   xmlns="http://www.w3.org/2000/svg"
-  aria-labelledby="magnify-plusTitleID magnify-plusDescID"
 >
-  <title id="magnify-plusTitleID">Zoom in</title>
-  <desc id="magnify-plusDescID">Take a look closer.</desc>
   <g
     class="fill-color"
     fill="none"
