@@ -29,5 +29,6 @@ class IAIcon${className} extends LitElement {
 
 customElements.define('ia-icon-${iconName}', IAIcon${className});
 
-export default IAIcon${className};`;
+export default IAIcon${className};
+`;
 };
