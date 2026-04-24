@@ -1,6 +1,6 @@
 {
   "name": "@internetarchive/icon-locale-pin",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "SVG locale-pin icon",
   "license": "AGPL-3.0-only",
   "main": "index.js",
@@ -13,7 +13,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "lit-html": "^1.2.1"
+    "lit": "^2.0.2 || ^3.0.0"
   },
   "devDependencies": {
     "@open-wc/eslint-config": "^1.0.0",

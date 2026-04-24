@@ -1,6 +1,6 @@
 {
   "name": "@internetarchive/icon-bookmark",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Multi-state SVG bookmark icon component",
   "author": "Shane Riley, Internet Archive",
   "license": "AGPL-3.0-only",
@@ -19,7 +19,7 @@
     "test:watch": "karma start --auto-watch=true --single-run=false"
   },
   "dependencies": {
-    "lit-html": "^1.2.1"
+    "lit": "^2.0.2 || ^3.0.0"
   },
   "devDependencies": {
     "@open-wc/eslint-config": "^2.0.0",
