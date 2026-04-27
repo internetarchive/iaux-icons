@@ -13,7 +13,7 @@ module.exports = (packageName, descriptiveName, version) => `{
     "lint": "eslint ."
   },
   "dependencies": {
-    "lit-html": "^1.2.1"
+    "lit": "^2.0.2 || ^3.0.0"
   },
   "devDependencies": {
     "@open-wc/eslint-config": "^1.0.0",
